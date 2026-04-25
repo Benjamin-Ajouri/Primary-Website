@@ -941,10 +941,12 @@
 
         <!-- RIGHT: contact form -->
         <!--
-          onsubmit="return false;" prevents default browser form submission for now.
-          To make it actually send emails, replace with a real form handler.
+          Formspree is a free service that handles form submissions and emails you.
+          Sign up at https://formspree.io to get your unique form ID, then replace
+          YOUR_FORM_ID below with it (e.g., if your URL is https://formspree.io/f/abc123,
+          your form ID is "abc123").
         -->
-        <form class="contact-form" onsubmit="return false;" aria-label="Contact form">
+        <form class="contact-form" action="https://formspree.io/f/mqewjpkv" method="POST" aria-label="Contact form">
 
           <div class="form-group">
             <!-- for="name" links this label to the input with id="name" -->
